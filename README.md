@@ -1,161 +1,107 @@
-# SoftSell — Landing Page
+# SoftSell Landing Page
 
-> Turn Unused Software Licenses Into Instant Cash
+A modern, responsive landing page built as part of the Web Development Internship assignment for Credex.
 
-A production-quality SaaS landing page built with React, Vite, Tailwind CSS, and Framer Motion.
+## 🚀 Live Demo
 
-## 🚀 Tech Stack
+[https://softsell-landing-page-cyan.vercel.app](https://softsell-landing-page-cyan.vercel.app)
 
-| Tool | Version | Purpose |
-|------|---------|---------|
-| React | 18 | UI library |
-| Vite | 5 | Build tool |
-| Tailwind CSS | 3 | Styling |
-| Framer Motion | 11 | Animations |
-| Lucide React | 0.400 | Icons |
+## 📌 Project Overview
 
-## 📁 Folder Structure
-
-```
-softsell/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   ├── Navbar.jsx          # Sticky responsive navbar
-│   │   ├── Hero.jsx            # Hero section with dashboard mockup
-│   │   ├── HowItWorks.jsx      # 3-step process cards
-│   │   ├── WhyChooseUs.jsx     # 4 feature cards with glow effects
-│   │   ├── Testimonials.jsx    # Customer review cards
-│   │   ├── ContactForm.jsx     # Validated contact form
-│   │   ├── ChatWidget.jsx      # AI chat bot widget
-│   │   └── Footer.jsx          # Full footer
-│   ├── hooks/
-│   │   └── useInView.js        # Intersection observer hook
-│   ├── App.jsx                 # Root app + loading screen
-│   ├── main.jsx                # Entry point
-│   └── index.css               # Global styles + Tailwind
-├── index.html                  # SEO meta tags + fonts
-├── vite.config.js
-├── tailwind.config.js
-├── postcss.config.js
-├── vercel.json
-└── package.json
-```
-
-## ⚡ Quick Start
-
-### Prerequisites
-- Node.js 18+
-- npm or pnpm
-
-### Install & Run
-
-```bash
-# Clone the repo
-git clone https://github.com/yourusername/softsell.git
-cd softsell
-
-# Install dependencies
-npm install
-
-# Start dev server
-npm run dev
-
-# Open http://localhost:5173
-```
-
-### Build for Production
-
-```bash
-npm run build
-
-# Preview production build locally
-npm run preview
-```
-
-## 🌐 Deploy to Vercel
-
-### Option 1: Vercel CLI
-```bash
-# Install Vercel CLI
-npm i -g vercel
-
-# Deploy
-vercel
-
-# Production deployment
-vercel --prod
-```
-
-### Option 2: GitHub Integration
-1. Push code to GitHub
-2. Go to [vercel.com](https://vercel.com) → New Project
-3. Import your GitHub repository
-4. Framework: **Vite** (auto-detected)
-5. Click **Deploy**
-
-No environment variables required for the base project.
+SoftSell is a clean and modern landing page designed to showcase a digital marketplace-style product experience. The project focuses on responsive design, modern UI/UX principles, smooth user interaction, and startup-quality presentation.
 
 ## ✨ Features
 
-### Sections
-- **Navbar** — Sticky, transparent, responsive with mobile hamburger
-- **Hero** — Bold headline, dual CTA, animated dashboard mockup with floating cards
-- **How It Works** — 3-step animated cards with hover effects
-- **Why Choose Us** — 4 feature cards with glowing hover effects + live stats
-- **Testimonials** — 4 realistic customer reviews with amount recovered
-- **Contact Form** — Full frontend validation, success state, accessible
-- **AI Chat Widget** — Rule-based chatbot with typing animation, quick prompts
-- **Footer** — Full links, social icons, newsletter, branding
+* Fully responsive design
+* Modern UI with Tailwind CSS
+* React + Vite based architecture
+* Clean component structure
+* Fast performance and optimized build
+* Smooth hover effects and transitions
+* Mobile-friendly layout
+* Professional landing page sections
 
-### Design
-- Dark theme (`#0B0F19` background)
-- Glassmorphism UI elements
-- Gradient accents (`#6366F1` → `#8B5CF6`)
-- Syne (display) + DM Sans (body) typography
-- Smooth Framer Motion animations
-- Intersection Observer scroll animations
-- Responsive across all breakpoints
+## 🛠️ Tech Stack
 
-### Accessibility
-- Semantic HTML (`<header>`, `<main>`, `<section>`, `<footer>`, `<nav>`, `<article>`)
-- ARIA labels on all interactive elements
-- Keyboard navigable
-- `role="alert"` on form errors
-- `aria-live` on chat typing indicator
-- `aria-expanded` on mobile menu toggle
-- `aria-required` and `aria-invalid` on form inputs
-- Skip navigation support via smooth scroll
+* React
+* Vite
+* Tailwind CSS
+* JavaScript
+* HTML5
+* CSS3
 
-## 🎨 Design Tokens
+## 📂 Folder Structure
 
-```css
-/* Colors */
---bg-primary:      #0B0F19
---brand-primary:   #6366F1
---brand-secondary: #8B5CF6
---text-primary:    #F8FAFC
---text-secondary:  #94A3B8
-
-/* Fonts */
-display: 'Syne'
-body:    'DM Sans'
-mono:    'JetBrains Mono'
+```bash
+softsell-landing-page/
+│
+├── public/
+├── src/
+│   ├── components/
+│   ├── assets/
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── package.json
+├── vite.config.js
+└── README.md
 ```
 
-## 📦 Customization
+## ⚙️ Installation & Setup
 
-### Changing content
-Edit data directly in the component files:
-- Testimonials → `src/components/Testimonials.jsx`
-- Features → `src/components/WhyChooseUs.jsx`
-- Steps → `src/components/HowItWorks.jsx`
-- Chat responses → `src/components/ChatWidget.jsx` → `FAQ_RESPONSES`
+Clone the repository:
 
-### Changing colors
-Edit `tailwind.config.js` → `theme.extend.colors`
+```bash
+git clone [https://github.com/nehap2110/softsell-landing-page.git](https://github.com/nehap2110/softsell-landing-page)
+```
+
+Move into the project folder:
+
+```bash
+cd softsell-landing-page
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
+
+```bash
+npm run dev
+```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+## 🌐 Deployment
+
+The project is deployed using Vercel.
+
+Live URL:
+
+https://softsell-landing-page-cyan.vercel.app
+
+## 🎯 Objectives of the Project
+
+* Build a visually appealing landing page
+* Practice responsive frontend development
+* Create startup-style UI/UX
+* Demonstrate React and Tailwind skills
+* Deliver production-ready frontend implementation
+
+
+## 👩‍💻 Author
+
+Neha Patel
+
+GitHub: [https://github.com/nehap2110](https://github.com/nehap2110)
 
 ## 📄 License
 
-MIT © SoftSell Inc.
+This project is created for educational and internship assig
